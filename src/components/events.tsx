@@ -50,6 +50,7 @@ export default function Events() {
 	const [events, setEvents] = React.useState<Event[]>([]);
 	const [loading, setLoading] = React.useState(true);
 
+	console.log(loading);
 	React.useEffect(() => {
 		setLoading(true);
 		import("@/lib/data.json")
