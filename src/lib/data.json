@@ -1,0 +1,593 @@
+{
+	"events": [
+		{
+			"id": "e1b2c3d4-0001-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event1.jpg",
+			"title": "Summer Music Festival",
+			"date": "2025-07-15",
+			"location": "Central Park, Cityville",
+			"description": "Experience the best live music in the city with top artists and food trucks!",
+			"onPromotion": true,
+			"createdBy": "u-org-1",
+			"dateCreated": "2025-05-01",
+			"ticketsAvailable": 500,
+			"ticketCost": 50,
+			"ticketsPurchased": 120,
+			"category": "Music"
+		},
+		{
+			"id": "e1b2c3d4-0002-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event2.jpg",
+			"title": "Championship Finals",
+			"date": "2025-08-02",
+			"location": "Grand Arena, Cityville",
+			"description": "Don't miss the sports event of the year. Cheer for your favorite team!",
+			"onPromotion": false,
+			"createdBy": "u-org-2",
+			"dateCreated": "2025-05-10",
+			"ticketsAvailable": 1000,
+			"ticketCost": 80,
+			"ticketsPurchased": 800,
+			"category": "Sports"
+		},
+		{
+			"id": "e1b2c3d4-0003-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event3.jpg",
+			"title": "Tech Conference 2025",
+			"date": "2025-09-10",
+			"location": "Convention Center, Cityville",
+			"description": "Innovate, network, and grow your career at the leading tech event.",
+			"onPromotion": true,
+			"createdBy": "u-org-1",
+			"dateCreated": "2025-05-15",
+			"ticketsAvailable": 300,
+			"ticketCost": 120,
+			"ticketsPurchased": 150,
+			"category": "Conferences"
+		},
+		{
+			"id": "e1b2c3d4-0004-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event4.jpg",
+			"title": "Art & Food Expo",
+			"date": "2025-10-05",
+			"location": "Downtown Gallery, Cityville",
+			"description": "A celebration of art, food, and culture. Fun for the whole family!",
+			"onPromotion": false,
+			"createdBy": "u-org-3",
+			"dateCreated": "2025-05-20",
+			"ticketsAvailable": 200,
+			"ticketCost": 30,
+			"ticketsPurchased": 60,
+			"category": "Festivals"
+		},
+		{
+			"id": "e1b2c3d4-0005-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event5.jpg",
+			"title": "Winter Gala Night",
+			"date": "2024-12-20",
+			"location": "City Hall, Cityville",
+			"description": "A glamorous evening of music, dance, and fine dining.",
+			"onPromotion": false,
+			"createdBy": "u-org-4",
+			"dateCreated": "2024-10-01",
+			"ticketsAvailable": 350,
+			"ticketCost": 100,
+			"ticketsPurchased": 300,
+			"category": "Theatre"
+		},
+		{
+			"id": "e1b2c3d4-0006-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event6.jpg",
+			"title": "Spring Art Fair",
+			"date": "2025-04-10",
+			"location": "Art Center, Cityville",
+			"description": "Discover local artists and their masterpieces.",
+			"onPromotion": false,
+			"createdBy": "u-org-5",
+			"dateCreated": "2025-02-15",
+			"ticketsAvailable": 200,
+			"ticketCost": 25,
+			"ticketsPurchased": 120,
+			"category": "Festivals"
+		},
+		{
+			"id": "e1b2c3d4-0007-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event7.jpg",
+			"title": "Autumn Book Fest",
+			"date": "2024-09-15",
+			"location": "Library Plaza, Cityville",
+			"description": "Meet your favorite authors and discover new books.",
+			"onPromotion": false,
+			"createdBy": "u-org-6",
+			"dateCreated": "2024-07-10",
+			"ticketsAvailable": 150,
+			"ticketCost": 15,
+			"ticketsPurchased": 100,
+			"category": "Online Events"
+		},
+		{
+			"id": "e1b2c3d4-0008-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event8.jpg",
+			"title": "City Marathon",
+			"date": "2025-03-22",
+			"location": "Main Street, Cityville",
+			"description": "Run for a cause and enjoy the city sights.",
+			"onPromotion": true,
+			"createdBy": "u-org-7",
+			"dateCreated": "2025-01-05",
+			"ticketsAvailable": 2000,
+			"ticketCost": 40,
+			"ticketsPurchased": 1800,
+			"category": "Sports"
+		},
+		{
+			"id": "e1b2c3d4-0009-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event9.jpg",
+			"title": "Food Truck Fiesta",
+			"date": "2025-06-18",
+			"location": "Riverside Park, Cityville",
+			"description": "Taste the best street food from around the city.",
+			"onPromotion": false,
+			"createdBy": "u-org-8",
+			"dateCreated": "2025-04-01",
+			"ticketsAvailable": 800,
+			"ticketCost": 20,
+			"ticketsPurchased": 600,
+			"category": "Festivals"
+		},
+		{
+			"id": "e1b2c3d4-0010-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event10.jpg",
+			"title": "Halloween Spooktacular",
+			"date": "2024-10-31",
+			"location": "Old Town, Cityville",
+			"description": "A night of frights, fun, and candy for all ages.",
+			"onPromotion": false,
+			"createdBy": "u-org-9",
+			"dateCreated": "2024-08-20",
+			"ticketsAvailable": 400,
+			"ticketCost": 35,
+			"ticketsPurchased": 350,
+			"category": "Online Events"
+		},
+		{
+			"id": "e1b2c3d4-0011-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event11.jpg",
+			"title": "Jazz in the Park",
+			"date": "2025-05-25",
+			"location": "Green Park, Cityville",
+			"description": "Enjoy smooth jazz under the stars.",
+			"onPromotion": false,
+			"createdBy": "u-org-10",
+			"dateCreated": "2025-03-10",
+			"ticketsAvailable": 250,
+			"ticketCost": 60,
+			"ticketsPurchased": 200,
+			"category": "Music"
+		},
+		{
+			"id": "e1b2c3d4-0012-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event12.jpg",
+			"title": "Kids Science Expo",
+			"date": "2025-02-14",
+			"location": "Science Center, Cityville",
+			"description": "Interactive science fun for kids and families.",
+			"onPromotion": false,
+			"createdBy": "u-org-11",
+			"dateCreated": "2024-12-01",
+			"ticketsAvailable": 300,
+			"ticketCost": 10,
+			"ticketsPurchased": 250,
+			"category": "Online Events"
+		},
+		{
+			"id": "e1b2c3d4-0013-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event13.jpg",
+			"title": "Spring Fashion Show",
+			"date": "2025-04-05",
+			"location": "Fashion Hall, Cityville",
+			"description": "See the latest trends from top designers.",
+			"onPromotion": false,
+			"createdBy": "u-org-12",
+			"dateCreated": "2025-01-20",
+			"ticketsAvailable": 180,
+			"ticketCost": 90,
+			"ticketsPurchased": 150,
+			"category": "Theatre"
+		},
+		{
+			"id": "e1b2c3d4-0014-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event14.jpg",
+			"title": "Outdoor Movie Night",
+			"date": "2025-07-01",
+			"location": "Sunset Field, Cityville",
+			"description": "Bring your blanket and enjoy a movie under the stars.",
+			"onPromotion": true,
+			"createdBy": "u-org-13",
+			"dateCreated": "2025-05-25",
+			"ticketsAvailable": 600,
+			"ticketCost": 12,
+			"ticketsPurchased": 400,
+			"category": "Theatre"
+		},
+		{
+			"id": "e1b2c3d4-0015-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event15.jpg",
+			"title": "Startup Pitch Night",
+			"date": "2025-06-05",
+			"location": "Innovation Hub, Cityville",
+			"description": "Watch startups pitch their ideas to investors.",
+			"onPromotion": false,
+			"createdBy": "u-org-14",
+			"dateCreated": "2025-03-30",
+			"ticketsAvailable": 120,
+			"ticketCost": 70,
+			"ticketsPurchased": 90,
+			"category": "Conferences"
+		},
+		{
+			"id": "e1b2c3d4-0016-4a5b-8c6d-1e2f3a4b5c6d",
+			"image": "/images/event16.jpg",
+			"title": "Charity Fun Run",
+			"date": "2024-11-12",
+			"location": "City Stadium, Cityville",
+			"description": "Run for a good cause and support local charities.",
+			"onPromotion": false,
+			"createdBy": "u-org-15",
+			"dateCreated": "2024-09-01",
+			"ticketsAvailable": 900,
+			"ticketCost": 20,
+			"ticketsPurchased": 700,
+			"category": "Sports"
+		}
+	],
+	"users": [
+		{
+			"id": "u-org-1",
+			"name": "Alice Organizer",
+			"email": "alice@events.com",
+			"password": "hashedpassword1",
+			"role": "organiser",
+			"organisationName": "Alice Events",
+			"eventsOrganized": [
+				"e1b2c3d4-0001-4a5b-8c6d-1e2f3a4b5c6d",
+				"e1b2c3d4-0003-4a5b-8c6d-1e2f3a4b5c6d"
+			]
+		},
+		{
+			"id": "u-org-2",
+			"name": "Bob Sports",
+			"email": "bob@events.com",
+			"password": "hashedpassword2",
+			"role": "organiser",
+			"organisationName": "Bob Sports Group",
+			"eventsOrganized": ["e1b2c3d4-0002-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-org-3",
+			"name": "Carol Art",
+			"email": "carol@events.com",
+			"password": "hashedpassword3",
+			"role": "organiser",
+			"organisationName": "Carol Artistry",
+			"eventsOrganized": ["e1b2c3d4-0004-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-org-4",
+			"name": "Derek Gala",
+			"email": "derek@events.com",
+			"password": "hashedpassword4",
+			"role": "organiser",
+			"organisationName": "Derek Galas",
+			"eventsOrganized": ["e1b2c3d4-0005-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-org-5",
+			"name": "Ella Spring",
+			"email": "ella@events.com",
+			"password": "hashedpassword5",
+			"role": "organiser",
+			"organisationName": "Ella Spring Org",
+			"eventsOrganized": ["e1b2c3d4-0006-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-org-6",
+			"name": "Frank Autumn",
+			"email": "frank@events.com",
+			"password": "hashedpassword6",
+			"role": "organiser",
+			"organisationName": "Frank Autumn Events",
+			"eventsOrganized": ["e1b2c3d4-0007-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-org-7",
+			"name": "Grace Marathon",
+			"email": "grace@events.com",
+			"password": "hashedpassword7",
+			"role": "organiser",
+			"organisationName": "Grace Marathons",
+			"eventsOrganized": ["e1b2c3d4-0008-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-org-8",
+			"name": "Hank Foodie",
+			"email": "hank@events.com",
+			"password": "hashedpassword8",
+			"role": "organiser",
+			"organisationName": "Hank Food Events",
+			"eventsOrganized": ["e1b2c3d4-0009-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-org-9",
+			"name": "Ivy Spooks",
+			"email": "ivy@events.com",
+			"password": "hashedpassword9",
+			"role": "organiser",
+			"organisationName": "Ivy Spooks Org",
+			"eventsOrganized": ["e1b2c3d4-0010-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-org-10",
+			"name": "Jack Jazz",
+			"email": "jack@events.com",
+			"password": "hashedpassword10",
+			"role": "organiser",
+			"organisationName": "Jack Jazz Group",
+			"eventsOrganized": ["e1b2c3d4-0011-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-org-11",
+			"name": "Kara Science",
+			"email": "kara@events.com",
+			"password": "hashedpassword11",
+			"role": "organiser",
+			"organisationName": "Kara Science Org",
+			"eventsOrganized": ["e1b2c3d4-0012-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-org-12",
+			"name": "Liam Fashion",
+			"email": "liam@events.com",
+			"password": "hashedpassword12",
+			"role": "organiser",
+			"organisationName": "Liam Fashion House",
+			"eventsOrganized": ["e1b2c3d4-0013-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-org-13",
+			"name": "Mona Movie",
+			"email": "mona@events.com",
+			"password": "hashedpassword13",
+			"role": "organiser",
+			"organisationName": "Mona Movie Nights",
+			"eventsOrganized": ["e1b2c3d4-0014-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-org-14",
+			"name": "Nate Startup",
+			"email": "nate@events.com",
+			"password": "hashedpassword14",
+			"role": "organiser",
+			"organisationName": "Nate Startups",
+			"eventsOrganized": ["e1b2c3d4-0015-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-org-15",
+			"name": "Olivia Charity",
+			"email": "olivia@events.com",
+			"password": "hashedpassword15",
+			"role": "organiser",
+			"organisationName": "Olivia Charity Org",
+			"eventsOrganized": ["e1b2c3d4-0016-4a5b-8c6d-1e2f3a4b5c6d"]
+		},
+		{
+			"id": "u-att-1",
+			"name": "Paul Attendee",
+			"email": "paul@users.com",
+			"password": "hashedpass16",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0001-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 2 },
+				{ "eventId": "e1b2c3d4-0005-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 1 }
+			]
+		},
+		{
+			"id": "u-att-2",
+			"name": "Quinn Visitor",
+			"email": "quinn@users.com",
+			"password": "hashedpass17",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0002-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 4 },
+				{ "eventId": "e1b2c3d4-0010-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 1 }
+			]
+		},
+		{
+			"id": "u-att-3",
+			"name": "Rita Past",
+			"email": "rita@users.com",
+			"password": "hashedpass18",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0007-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 1 },
+				{ "eventId": "e1b2c3d4-0016-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 2 }
+			]
+		},
+		{
+			"id": "u-att-4",
+			"name": "Sam NoTickets",
+			"email": "sam@users.com",
+			"password": "hashedpass19",
+			"role": "attendee"
+		},
+		{
+			"id": "u-att-5",
+			"name": "Tina Future",
+			"email": "tina@users.com",
+			"password": "hashedpass20",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0003-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 3 }
+			]
+		},
+		{
+			"id": "u-att-6",
+			"name": "Uma Past",
+			"email": "uma@users.com",
+			"password": "hashedpass21",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0005-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 2 }
+			]
+		},
+		{
+			"id": "u-att-7",
+			"name": "Vera NoTickets",
+			"email": "vera@users.com",
+			"password": "hashedpass22",
+			"role": "attendee"
+		},
+		{
+			"id": "u-att-8",
+			"name": "Will Past",
+			"email": "will@users.com",
+			"password": "hashedpass23",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0010-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 1 }
+			]
+		},
+		{
+			"id": "u-att-9",
+			"name": "Xena Future",
+			"email": "xena@users.com",
+			"password": "hashedpass24",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0014-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 2 }
+			]
+		},
+		{
+			"id": "u-att-10",
+			"name": "Yuri NoTickets",
+			"email": "yuri@users.com",
+			"password": "hashedpass25",
+			"role": "attendee"
+		},
+		{
+			"id": "u-att-11",
+			"name": "Zane Past",
+			"email": "zane@users.com",
+			"password": "hashedpass26",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0007-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 1 }
+			]
+		},
+		{
+			"id": "u-att-12",
+			"name": "Ava Past",
+			"email": "ava@users.com",
+			"password": "hashedpass27",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0012-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 1 }
+			]
+		},
+		{
+			"id": "u-att-13",
+			"name": "Ben NoTickets",
+			"email": "ben@users.com",
+			"password": "hashedpass28",
+			"role": "attendee"
+		},
+		{
+			"id": "u-att-14",
+			"name": "Cleo Past",
+			"email": "cleo@users.com",
+			"password": "hashedpass29",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0007-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 2 }
+			]
+		},
+		{
+			"id": "u-att-15",
+			"name": "Dane Future",
+			"email": "dane@users.com",
+			"password": "hashedpass30",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0013-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 1 }
+			]
+		},
+		{
+			"id": "u-att-16",
+			"name": "Eli NoTickets",
+			"email": "eli@users.com",
+			"password": "hashedpass31",
+			"role": "attendee"
+		},
+		{
+			"id": "u-att-17",
+			"name": "Fay Past",
+			"email": "fay@users.com",
+			"password": "hashedpass32",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0005-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 1 }
+			]
+		},
+		{
+			"id": "u-att-18",
+			"name": "Gus NoTickets",
+			"email": "gus@users.com",
+			"password": "hashedpass33",
+			"role": "attendee"
+		},
+		{
+			"id": "u-att-19",
+			"name": "Hope Past",
+			"email": "hope@users.com",
+			"password": "hashedpass34",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0010-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 2 }
+			]
+		},
+		{
+			"id": "u-att-20",
+			"name": "Iris NoTickets",
+			"email": "iris@users.com",
+			"password": "hashedpass35",
+			"role": "attendee"
+		},
+		{
+			"id": "u-att-21",
+			"name": "Jude Past",
+			"email": "jude@users.com",
+			"password": "hashedpass36",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0007-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 1 }
+			]
+		},
+		{
+			"id": "u-att-22",
+			"name": "Kian NoTickets",
+			"email": "kian@users.com",
+			"password": "hashedpass37",
+			"role": "attendee"
+		},
+		{
+			"id": "u-att-23",
+			"name": "Lara Past",
+			"email": "lara@users.com",
+			"password": "hashedpass38",
+			"role": "attendee",
+			"tickets": [
+				{ "eventId": "e1b2c3d4-0012-4a5b-8c6d-1e2f3a4b5c6d", "quantity": 2 }
+			]
+		}
+	]
+}
