@@ -5,6 +5,7 @@ import { AlertCircleIcon, ImageIcon, UploadIcon, XIcon } from "lucide-react";
 
 import { useFileUpload } from "@/hooks/use-file-upload";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 type ImageUploaderProps = {
 	onUpload?: (imgUrl: string) => void;
@@ -58,7 +59,7 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({ onUpload }) => {
 					/>
 					{previewUrl ? (
 						<div className="absolute inset-0 flex items-center justify-center p-4">
-							<img
+							<Image
 								src={previewUrl}
 								alt={files[0]?.file?.name || "Uploaded image"}
 								className="mx-auto max-h-full rounded object-contain"

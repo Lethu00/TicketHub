@@ -4,9 +4,19 @@ import React from "react";
 import { useUser } from "@/lib/user-role";
 import DashboardOrg from "@/components/dashboard-org";
 
+type Event = {
+	id: string;
+	createdBy: string;
+	title: string;
+	date: string;
+	location: string;
+	image: string;
+	// Add other event properties as needed
+};
+
 const Page = () => {
 	const { user } = useUser();
-	const [allEvents, setAllEvents] = React.useState<any[]>([]);
+	const [allEvents, setAllEvents] = React.useState<Event[]>([]);
 
 	React.useEffect(() => {
 		const fetchEvents = async () => {

@@ -2,14 +2,12 @@
 import React from "react";
 import AuthForm from "@/components/auth-form";
 import { useUser } from "@/lib/user-role";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 
 export default function SignupOrganiserPage() {
 	const { login } = useUser();
 	const router = useRouter();
-	const searchParams = useSearchParams();
-	const referrer = searchParams.get("ref") || "/";
 
 	const handleAuth = (
 		email: string,

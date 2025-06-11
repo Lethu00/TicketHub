@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/select";
 import { Switch } from "@/components/ui/switch";
 import ImageUploader from "@/components/image-uploader";
-import { Music, PartyPopper, Briefcase, Users, Calendar } from "lucide-react";
 import { useUser } from "@/lib/user-role";
 import { toast } from "sonner";
 import { useRouter } from "next/navigation";
@@ -27,16 +26,8 @@ import {
 	AlertDialogFooter,
 	AlertDialogHeader,
 	AlertDialogTitle,
-	AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
-
-const categoryIcons: Record<string, React.ReactNode> = {
-	Music: <Music className="w-16 h-16 text-pink-400" />,
-	Festival: <PartyPopper className="w-16 h-16 text-yellow-500" />,
-	Conference: <Briefcase className="w-16 h-16 text-blue-500" />,
-	Community: <Users className="w-16 h-16 text-green-500" />,
-	Default: <Calendar className="w-16 h-16 text-gray-400" />,
-};
+import Image from "next/image";
 
 type EventFormProps = {
 	onCreated?: () => void;
@@ -58,7 +49,7 @@ const EventForm: React.FC<EventFormProps> = ({ onCreated, loading }) => {
 	const [onPromotion, setOnPromotion] = useState(false);
 	const [submitting, setSubmitting] = useState(false);
 	const [confirmOpen, setConfirmOpen] = useState(false);
-	const [showFallback, setShowFallback] = useState(false);
+	const [_showFallback, setShowFallback] = useState(false);
 
 	const handleImageUpload = (imgUrl: string) => {
 		setImage(imgUrl);
@@ -175,7 +166,7 @@ const EventForm: React.FC<EventFormProps> = ({ onCreated, loading }) => {
 						<div className="flex flex-col items-center gap-4 w-full">
 							<div className="w-32 h-32 flex items-center justify-center bg-gray-100 rounded-lg border hidden">
 								{image ? (
-									<img
+									<Image
 										src={image}
 										alt="Event"
 										className="w-32 h-32 object-cover rounded-lg "

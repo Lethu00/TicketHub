@@ -25,7 +25,7 @@ const promotedEvents = [
 
 export default function Hero() {
 	const [current, setCurrent] = React.useState(0);
-	const [direction, setDirection] = React.useState<"left" | "right">("right");
+	const [_direction, setDirection] = React.useState<"left" | "right">("right");
 
 	const prev = () => {
 		setDirection("left");

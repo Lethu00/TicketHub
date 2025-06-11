@@ -53,18 +53,6 @@ export default function MyTicketsPage() {
 	};
 
 	// Download a single ticket as an image (for PDF, use browser print dialog)
-	const handleDownload = (ticketId: string, idx: number) => {
-		const el = document.getElementById(`ticket-${ticketId}-${idx}`);
-		if (!el) return;
-		import("html2canvas").then((html2canvas) => {
-			html2canvas.default(el).then((canvas) => {
-				const link = document.createElement("a");
-				link.download = `ticket-${ticketId}-${idx + 1}.png`;
-				link.href = canvas.toDataURL();
-				link.click();
-			});
-		});
-	};
 
 	if (!user) {
 		return (
@@ -120,9 +108,6 @@ export default function MyTicketsPage() {
 											user={user}
 											ticketIndex={i}
 											total={ticket.quantity || 1}
-											onDownload={() =>
-												handleDownload(ticket.event.id, idx + i)
-											}
 										/>
 									</div>
 								))

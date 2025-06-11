@@ -3,9 +3,19 @@ import EventsOrg from "@/components/events-org";
 import React from "react";
 import { useUser } from "@/lib/user-role";
 
+type Event = {
+	id: string;
+	createdBy: string;
+	title: string;
+	date: string;
+	location: string;
+	image: string;
+	[name: string]: unknown;
+};
+
 const Page = () => {
 	const { user } = useUser();
-	const [allEvents, setAllEvents] = React.useState<any[]>([]);
+	const [allEvents, setAllEvents] = React.useState<Event[]>([]);
 
 	React.useEffect(() => {
 		const fetchEvents = async () => {
