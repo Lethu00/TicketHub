@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { Suspense } from "react";
 import AuthForm from "@/components/auth-form";
 import { useUser } from "@/lib/user-role";
 import { useRouter } from "next/navigation";
@@ -64,11 +64,13 @@ export default function SignupOrganiserPage() {
 				style={{ minHeight: "100vh", minWidth: "100vw" }}
 			/>
 			<div className="relative z-10 w-full flex items-center justify-center px-8 my-4">
-				<AuthForm
-					onSubmit={handleAuth}
-					backgroundImageUrl=""
-					role="organiser"
-				/>
+				<Suspense fallback={<p>Loading...</p>}>
+					<AuthForm
+						onSubmit={handleAuth}
+						backgroundImageUrl=""
+						role="organiser"
+					/>
+				</Suspense>
 			</div>
 		</div>
 	);

@@ -2,6 +2,7 @@
 import AuthForm from "@/components/auth-form";
 import { useUser } from "@/lib/user-role";
 import { useRouter, useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 import { toast } from "sonner";
 
 export default function SignupPage() {
@@ -46,7 +47,9 @@ export default function SignupPage() {
 		>
 			<div className="absolute inset-0 bg-black opacity-60 z-0" />
 			<div className="relative z-10 w-full flex items-center justify-center px-8 ">
-				<AuthForm onSubmit={handleAuth} backgroundImageUrl="" />
+				<Suspense fallback={<p>Loading...</p>}>
+					<AuthForm onSubmit={handleAuth} backgroundImageUrl="" />
+				</Suspense>
 			</div>
 		</div>
 	);
