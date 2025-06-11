@@ -5,7 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense } from "react";
 import { toast } from "sonner";
 
-export default function LoginPage() {
+function LoginPageInner() {
 	const { login } = useUser();
 	const router = useRouter();
 	const searchParams = useSearchParams();
@@ -52,10 +52,16 @@ export default function LoginPage() {
 		>
 			<div className="absolute inset-0 bg-black opacity-60 z-0" />
 			<div className="relative z-10 w-full flex items-center justify-center p-8 ">
-				<Suspense fallback={<p>Loading...</p>}>
-					<AuthForm onSubmit={handleAuth} backgroundImageUrl="" />
-				</Suspense>
+				<AuthForm onSubmit={handleAuth} backgroundImageUrl="" />
 			</div>
 		</div>
+	);
+}
+
+export default function LoginPage() {
+	return (
+		<Suspense fallback={<p>Loading...</p>}>
+			<LoginPageInner />
+		</Suspense>
 	);
 }
