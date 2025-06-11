@@ -49,7 +49,7 @@ const EventForm: React.FC<EventFormProps> = ({ onCreated, loading }) => {
 	const [onPromotion, setOnPromotion] = useState(false);
 	const [submitting, setSubmitting] = useState(false);
 	const [confirmOpen, setConfirmOpen] = useState(false);
-	const [_showFallback, setShowFallback] = useState(false);
+	const [showFallback, setShowFallback] = useState(false);
 
 	const handleImageUpload = (imgUrl: string) => {
 		setImage(imgUrl);
@@ -66,7 +66,7 @@ const EventForm: React.FC<EventFormProps> = ({ onCreated, loading }) => {
 	// 	}
 	// 	return categoryIcons["Default"];
 	// };
-
+	console.log(showFallback);
 	const handleSubmit = (e: React.FormEvent) => {
 		e.preventDefault();
 		setShowFallback(true); // Only show fallback if no image on submit

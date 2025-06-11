@@ -25,7 +25,8 @@ const promotedEvents = [
 
 export default function Hero() {
 	const [current, setCurrent] = React.useState(0);
-	const [_direction, setDirection] = React.useState<"left" | "right">("right");
+	const [direction, setDirection] = React.useState<"left" | "right">("right");
+	console.log("Current slide:", current, "Direction:", direction);
 
 	const prev = () => {
 		setDirection("left");
