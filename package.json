@@ -8,6 +8,9 @@
 		"start": "next start",
 		"lint": "next lint"
 	},
+	"rules": {
+		"@typescript-eslint/no-unused-vars": "warn"
+	},
 	"overrides": {
 		"react-is": "^19.0.0-rc-69d4b800-20241021"
 	},
