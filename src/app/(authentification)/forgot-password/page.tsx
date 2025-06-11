@@ -4,15 +4,21 @@ import { Suspense } from "react";
 
 const backgroundImageUrl = "/globe.svg";
 
-export default function ForgotPasswordPage() {
+function ForgotPasswordPageInner() {
 	return (
 		<div
 			className="min-h-screen w-full flex items-center justify-center bg-cover bg-center"
 			style={{ backgroundImage: `url(${backgroundImageUrl})` }}
 		>
-			<Suspense fallback={<p>Loading...</p>}>
-				<AuthForm onSubmit={() => {}} backgroundImageUrl="" />
-			</Suspense>
+			<AuthForm onSubmit={() => {}} backgroundImageUrl="" />
 		</div>
+	);
+}
+
+export default function ForgotPasswordPage() {
+	return (
+		<Suspense fallback={<p>Loading...</p>}>
+			<ForgotPasswordPageInner />
+		</Suspense>
 	);
 }

@@ -5,7 +5,7 @@ import { useUser } from "@/lib/user-role";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 
-export default function SignupOrganiserPage() {
+function SignupOrganiserPageInner() {
 	const { login } = useUser();
 	const router = useRouter();
 
@@ -64,14 +64,20 @@ export default function SignupOrganiserPage() {
 				style={{ minHeight: "100vh", minWidth: "100vw" }}
 			/>
 			<div className="relative z-10 w-full flex items-center justify-center px-8 my-4">
-				<Suspense fallback={<p>Loading...</p>}>
-					<AuthForm
-						onSubmit={handleAuth}
-						backgroundImageUrl=""
-						role="organiser"
-					/>
-				</Suspense>
+				<AuthForm
+					onSubmit={handleAuth}
+					backgroundImageUrl=""
+					role="organiser"
+				/>
 			</div>
 		</div>
+	);
+}
+
+export default function SignupOrganiserPage() {
+	return (
+		<Suspense fallback={<p>Loading...</p>}>
+			<SignupOrganiserPageInner />
+		</Suspense>
 	);
 }
