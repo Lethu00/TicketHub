@@ -60,8 +60,16 @@ export default function Header() {
 		setMobileCategoriesOpen(false);
 	};
 
+	// Define a type for navLinks items
+	type NavLink = {
+		label: string;
+		href?: string;
+		icon?: React.ReactNode;
+		dropdown?: boolean;
+	};
+
 	// Navigation for each role
-	const navLinks = (() => {
+	const navLinks: NavLink[] = (() => {
 		if (isOrganizer) {
 			return [
 				{
@@ -77,7 +85,7 @@ export default function Header() {
 				{
 					label: "Create Event",
 					href: "/organiser/event-create",
-					icon: <PlusCircle className="inline w-4 h-4 mr-1" />,
+					icon: <PlusCircle />,
 				},
 			];
 		}
@@ -218,22 +226,43 @@ export default function Header() {
 												style={{ boxSizing: "border-box" }}
 											>
 												{/* Icon is white by default, pink when parent is hovered */}
-												{React.cloneElement(link.icon, {
-													className:
-														"w-5 h-5 text-white group-hover:text-pink-600 transition-colors",
-												})}
+												{link.icon && (
+													<span
+														style={{
+															width: 20,
+															height: 20,
+															display: "inline-flex",
+															alignItems: "center",
+															justifyContent: "center",
+															color: "white",
+															transition: "color 0.2s",
+														}}
+														className="group-hover:text-pink-600"
+													>
+														{link.icon}
+													</span>
+												)}
 												{link.label}
 											</NavigationMenuLink>
 										) : (
 											<NavigationMenuLink
 												href={link.href}
-												className="flex flex-row items-center gap-2  hover:bg-pink-700 text-white px-6 py-2 font-medium"
+												className="flex flex-row items-center gap-2 hover:bg-pink-700 text-white px-6 py-2 font-medium"
 											>
-												{/* White icon */}
-												{link.icon &&
-													React.cloneElement(link.icon, {
-														className: "w-5 h-5 text-white",
-													})}
+												{link.icon && (
+													<span
+														style={{
+															width: 20,
+															height: 20,
+															display: "inline-flex",
+															alignItems: "center",
+															justifyContent: "center",
+															color: "white",
+														}}
+													>
+														{link.icon}
+													</span>
+												)}
 												{link.label}
 											</NavigationMenuLink>
 										)}

@@ -153,6 +153,7 @@ const EventForm: React.FC<EventFormProps> = ({ onCreated, loading }) => {
 			setSubmitting(false);
 		}
 	};
+	console.log(loading);
 
 	return (
 		<>
@@ -164,7 +165,7 @@ const EventForm: React.FC<EventFormProps> = ({ onCreated, loading }) => {
 					>
 						{/* Left: Image & Category, Event Date */}
 						<div className="flex flex-col items-center gap-4 w-full">
-							<div className="w-32 h-32 flex items-center justify-center bg-gray-100 rounded-lg border hidden">
+							<div className="w-32 h-32  items-center justify-center bg-gray-100 rounded-lg border hidden">
 								{image ? (
 									<Image
 										src={image}
